@@ -1,11 +1,11 @@
-name: 'Sample Dotnet Action'
-description: 'sample dotnet based action'
-author: 'Your name or organization here'
+name: 'Hello World Dotnet Action'
+description: 'Test dotnet based action'
+author: 'sbaker'
 inputs:
-  milliseconds:
+  who:
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+    description: 'Hello who?'
+    default: 'World!'
 runs:
   using: 'node12'
   main: 'index.js'
