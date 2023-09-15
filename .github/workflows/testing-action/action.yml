@@ -6,11 +6,11 @@ runs:
       uses: __CUSTOM_ACTION_REPO__@__GITHUB_SHA__
       id: sample
       with:
-        milliseconds: 5000
+        who: 'World!'
     - name: Test Outputs
       run: |
-        if ("${{ steps.sample.outputs.time }}") {
-          Write-Output "Output Value Found [${{ steps.sample.outputs.time }}]"
+        if ("${{ steps.sample.outputs.result }}") {
+          Write-Output "Output Value Found [${{ steps.sample.outputs.result }}]"
         } else {
           Write-Error "No output value found"
           exit 1
