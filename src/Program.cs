@@ -14,7 +14,9 @@ namespace dotnet_sample_action
             try
             {
                 string who = _core.GetInput("who");
-                _core.Info(GenerateMessage(who));
+                string result = GenerateMessage(who);
+                _core.Info(result);
+                _core.SetOutput("result", result);
             }
             catch (Exception ex)
             {
