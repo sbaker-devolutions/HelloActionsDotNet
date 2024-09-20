@@ -26,4 +26,3 @@ The has a few potential benefits vs a docker-based .Net action:
 6. Modify the run-action.ps1 file in the root of the repo to use the proper path/name of your binaries.
 7. Run build.ps1 to build a windows + linux + mac version of your action, and be sure to commit the resulting binaries along with your code changes.
 8. Modify .github/workflows/testing-action/action.yml to test your action.
-
